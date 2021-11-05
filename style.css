@@ -125,9 +125,10 @@ body {
 
 .section__title {
   margin-bottom: 3rem;
+  color: var(--color-primary);
 }
 
-.services__text {
+.section__text {
   font-size: 1.7rem;
   padding: 1rem 5%;
 }
@@ -184,6 +185,11 @@ body {
   text-align: center;
   background-color: var(--color-black);
   padding: 7rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .reviews__main * {
