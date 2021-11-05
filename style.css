@@ -21,6 +21,7 @@ body {
   --color-primary: #f19201;
   --color-white: #ffffff;
   --color-grey: #e5e5e5;
+  --color-black: #000000;
 }
 
 .btn {
@@ -41,7 +42,7 @@ body {
   display: flex;
   flex-direction: column;
 
-  /* height: 80vh; */
+  height: 80vh;
   background-image: url("img/image2.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -106,7 +107,6 @@ body {
 
 .welcome-text {
   font-size: 4rem;
-  letter-spacing: 3px;
   text-transform: capitalize;
   width: 50%;
 }
@@ -168,4 +168,53 @@ body {
   font-size: 1.4rem;
   font-style: italic;
   margin: 2rem auto;
+}
+
+.reviews {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reviews__img {
+  width: 50%;
+}
+
+.reviews__main {
+  color: var(--color-white);
+  text-align: center;
+  background-color: var(--color-black);
+  padding: 7rem;
+}
+
+.reviews__main * {
+  margin-bottom: 4rem;
+}
+
+.reviews__title {
+  font-size: 4rem;
+  position: relative;
+  display: inline-block;
+}
+
+.reviews__title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  margin: 0 23%;
+  border-bottom: 4px solid white;
+}
+
+.reviews__sub-title {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.reviews__text {
+  font-size: 1.7rem;
+}
+
+.reviews__author {
+  font-size: 2rem;
 }
