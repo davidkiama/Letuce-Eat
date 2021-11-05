@@ -22,6 +22,7 @@ body {
   --color-white: #ffffff;
   --color-grey: #e5e5e5;
   --color-black: #000000;
+  --color-black-light: hsla(0, 0%, 0%, 0.61);
 }
 
 .btn {
@@ -124,16 +125,19 @@ body {
 }
 
 .section__title {
+  text-align: center;
   margin-bottom: 3rem;
   color: var(--color-primary);
 }
 
 .section__text {
   font-size: 1.7rem;
+  text-align: center;
   padding: 1rem 5%;
 }
 
-.foods {
+.foods,
+.menus {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -223,4 +227,46 @@ body {
 
 .reviews__author {
   font-size: 2rem;
+}
+
+/*  */
+
+.section-menu {
+  background-color: var(--color-grey);
+  padding: 2rem;
+}
+
+.menu {
+  display: flex;
+  background-color: var(--color-white);
+}
+
+.menu__img {
+  height: 30rem;
+  padding: 2rem;
+}
+
+.menu__main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 30rem;
+  padding: 2rem;
+}
+
+.menu__title {
+  font-size: 2.5rem;
+}
+
+.menu__ingr {
+  color: var(--color-black-light);
+  font-style: italic;
+  font-size: 1.6rem;
+}
+
+.menu__price {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-primary);
 }
