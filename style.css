@@ -23,6 +23,12 @@ body {
   --color-grey: #e5e5e5;
   --color-black: #000000;
   --color-black-light: hsla(0, 0%, 0%, 0.61);
+
+  /* margin bottom variables */
+
+  --mg-btm-large: 6rem;
+  --mg-btm-medium: 4rem;
+  --mg-btm-small: 2rem;
 }
 
 .btn {
@@ -126,7 +132,7 @@ body {
 
 .section__title {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: var(--mg-btm-large);
   color: var(--color-primary);
 }
 
@@ -134,6 +140,7 @@ body {
   font-size: 1.7rem;
   text-align: center;
   padding: 1rem 5%;
+  margin-bottom: var(--mg-btm-medium);
 }
 
 .foods,
@@ -145,7 +152,7 @@ body {
   row-gap: 5rem;
   column-gap: 5rem;
 
-  margin: 4rem 0;
+  margin-bottom: var(--mg-btm-large);
 }
 
 .food {
@@ -162,7 +169,7 @@ body {
   width: 5rem;
   background-color: var(--color-primary);
   border-radius: 50%;
-  margin-bottom: 2rem;
+  margin-bottom: var(--mg-btm-small);
 }
 
 .food__title {
@@ -197,7 +204,7 @@ body {
 }
 
 .reviews__main * {
-  margin-bottom: 4rem;
+  margin-bottom: var(--mg-btm-medium);
 }
 
 .reviews__title {
@@ -269,4 +276,52 @@ body {
   font-size: 2rem;
   font-weight: 600;
   color: var(--color-primary);
+}
+
+/* Footer styles */
+.footer {
+  text-align: center;
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.footer__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  height: 35rem;
+  background-image: url("img/image8.png");
+  background-size: contain;
+  padding: 5rem 0;
+}
+
+.footer__title {
+  font-weight: 200;
+  font-style: italic;
+  font-size: 3rem;
+}
+
+.footer__sub-title {
+  font-size: 3.5rem;
+  text-transform: capitalize;
+}
+
+.footer__btn {
+  color: var(--color-white);
+  border: 1px solid var(--color-white);
+  background-color: rgb(0, 0, 0, 0.1);
+  transition: color 0.2s;
+}
+
+.footer__btn:hover {
+  cursor: pointer;
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.footer__copy {
+  padding: 2rem;
+  font-size: 1.8rem;
 }
