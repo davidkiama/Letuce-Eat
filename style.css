@@ -31,9 +31,11 @@ body {
   --mg-btm-small: 2rem;
 }
 
+/* Styles for components */
 .btn {
   font-size: 2rem;
   padding: 1rem 2rem;
+  cursor: pointer;
   outline: none;
   border: none;
 }
@@ -44,6 +46,11 @@ body {
   color: var(--color-white);
   background-color: var(--color-primary);
 }
+
+.heading-2 {
+  font-size: 3rem;
+}
+/* End of components */
 
 .header {
   display: flex;
@@ -91,6 +98,7 @@ body {
   color: var(--color-white);
   font-size: 2rem;
   position: relative;
+  transition: all 0.2s;
 }
 
 .nav__link:hover::before {
@@ -99,7 +107,7 @@ body {
   bottom: 0;
   width: 60%;
   margin: 0 20%;
-  border-bottom: 4px solid magenta;
+  border-bottom: 4px solid var(--color-primary);
 }
 
 .header__main {
@@ -119,10 +127,6 @@ body {
 }
 
 /* Section Services styling start here */
-
-.heading-2 {
-  font-size: 3rem;
-}
 
 .services {
   text-align: center;
@@ -312,11 +316,11 @@ body {
   color: var(--color-white);
   border: 1px solid var(--color-white);
   background-color: rgb(0, 0, 0, 0.1);
+
   transition: color 0.2s;
 }
 
 .footer__btn:hover {
-  cursor: pointer;
   color: var(--color-primary);
   border-color: var(--color-primary);
 }
