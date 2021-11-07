@@ -17,7 +17,7 @@ Moringa Restaurant offers the best, healthy and affordalbe dishes.
 
 ## Author
 
-David Kiama](https://github.com/davidkiama)
+[David Kiama](https://github.com/davidkiama)
 
 ## Project setup and instructions
 
