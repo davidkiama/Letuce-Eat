@@ -27,7 +27,7 @@ body {
   /* margin bottom variables */
 
   --mg-btm-large: 6rem;
-  --mg-btm-medium: 4rem;
+  --mg-btm-medium: 5rem;
   --mg-btm-small: 2rem;
 }
 
@@ -56,12 +56,11 @@ body {
   display: flex;
   flex-direction: column;
 
+  color: white;
   height: 80vh;
   background-image: url("img/image2.png");
   background-repeat: no-repeat;
   background-size: cover;
-
-  color: white;
 }
 
 .header__top-bar {
@@ -141,9 +140,10 @@ body {
 }
 
 .section__text {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   text-align: center;
   padding: 1rem 5%;
+  margin: 0 15%;
   margin-bottom: var(--mg-btm-medium);
 }
 
@@ -163,6 +163,7 @@ body {
   background-color: var(--color-white);
   padding: 3rem 2rem;
   width: 260px;
+  box-shadow: 2px 3px 4px 3px rgb(0, 0, 0, 0.3);
 }
 
 .food__num {
@@ -225,6 +226,11 @@ body {
   width: 50%;
   margin: 0 23%;
   border-bottom: 4px solid white;
+  transition: all 0.2s;
+}
+
+.reviews__title:hover::after {
+  border-bottom: 4px solid var(--color-primary);
 }
 
 .reviews__sub-title {
